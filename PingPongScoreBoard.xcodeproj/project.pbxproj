@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E6D24040BB000EB80E7 /* AppDelegate.swift */; };
+		01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E6F24040BB000EB80E7 /* SceneDelegate.swift */; };
+		01375E7224040BB000EB80E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E7124040BB000EB80E7 /* ViewController.swift */; };
+		01375E7524040BB000EB80E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01375E7324040BB000EB80E7 /* Main.storyboard */; };
+		01375E7724040BB100EB80E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01375E7624040BB100EB80E7 /* Assets.xcassets */; };
+		01375E7A24040BB100EB80E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01375E7824040BB100EB80E7 /* LaunchScreen.storyboard */; };
+		01375E8524040BB100EB80E7 /* PingPongScoreBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E8424040BB100EB80E7 /* PingPongScoreBoardTests.swift */; };
+		01375E9024040BB100EB80E7 /* PingPongScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E8F24040BB100EB80E7 /* PingPongScoreBoardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01375E8124040BB100EB80E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01375E6224040BB000EB80E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01375E6924040BB000EB80E7;
+			remoteInfo = PingPongScoreBoard;
+		};
+		01375E8C24040BB100EB80E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01375E6224040BB000EB80E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01375E6924040BB000EB80E7;
+			remoteInfo = PingPongScoreBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01375E6D24040BB000EB80E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01375E6F24040BB000EB80E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		01375E7124040BB000EB80E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01375E7424040BB000EB80E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01375E7624040BB100EB80E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01375E7924040BB100EB80E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01375E7B24040BB100EB80E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01375E8024040BB100EB80E7 /* PingPongScoreBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingPongScoreBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01375E8424040BB100EB80E7 /* PingPongScoreBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongScoreBoardTests.swift; sourceTree = "<group>"; };
+		01375E8624040BB100EB80E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01375E8B24040BB100EB80E7 /* PingPongScoreBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingPongScoreBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01375E8F24040BB100EB80E7 /* PingPongScoreBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongScoreBoardUITests.swift; sourceTree = "<group>"; };
+		01375E9124040BB100EB80E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01375E6724040BB000EB80E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01375E7D24040BB100EB80E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01375E8824040BB100EB80E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01375E6124040BB000EB80E7 = {
+			isa = PBXGroup;
+			children = (
+				01375E6C24040BB000EB80E7 /* PingPongScoreBoard */,
+				01375E8324040BB100EB80E7 /* PingPongScoreBoardTests */,
+				01375E8E24040BB100EB80E7 /* PingPongScoreBoardUITests */,
+				01375E6B24040BB000EB80E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01375E6B24040BB000EB80E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */,
+				01375E8024040BB100EB80E7 /* PingPongScoreBoardTests.xctest */,
+				01375E8B24040BB100EB80E7 /* PingPongScoreBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01375E6C24040BB000EB80E7 /* PingPongScoreBoard */ = {
+			isa = PBXGroup;
+			children = (
+				01375E6D24040BB000EB80E7 /* AppDelegate.swift */,
+				01375E6F24040BB000EB80E7 /* SceneDelegate.swift */,
+				01375E7124040BB000EB80E7 /* ViewController.swift */,
+				01375E7324040BB000EB80E7 /* Main.storyboard */,
+				01375E7624040BB100EB80E7 /* Assets.xcassets */,
+				01375E7824040BB100EB80E7 /* LaunchScreen.storyboard */,
+				01375E7B24040BB100EB80E7 /* Info.plist */,
+			);
+			path = PingPongScoreBoard;
+			sourceTree = "<group>";
+		};
+		01375E8324040BB100EB80E7 /* PingPongScoreBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				01375E8424040BB100EB80E7 /* PingPongScoreBoardTests.swift */,
+				01375E8624040BB100EB80E7 /* Info.plist */,
+			);
+			path = PingPongScoreBoardTests;
+			sourceTree = "<group>";
+		};
+		01375E8E24040BB100EB80E7 /* PingPongScoreBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01375E8F24040BB100EB80E7 /* PingPongScoreBoardUITests.swift */,
+				01375E9124040BB100EB80E7 /* Info.plist */,
+			);
+			path = PingPongScoreBoardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01375E6924040BB000EB80E7 /* PingPongScoreBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01375E9424040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoard" */;
+			buildPhases = (
+				01375E6624040BB000EB80E7 /* Sources */,
+				01375E6724040BB000EB80E7 /* Frameworks */,
+				01375E6824040BB000EB80E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingPongScoreBoard;
+			productName = PingPongScoreBoard;
+			productReference = 01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01375E7F24040BB100EB80E7 /* PingPongScoreBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01375E9724040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoardTests" */;
+			buildPhases = (
+				01375E7C24040BB100EB80E7 /* Sources */,
+				01375E7D24040BB100EB80E7 /* Frameworks */,
+				01375E7E24040BB100EB80E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01375E8224040BB100EB80E7 /* PBXTargetDependency */,
+			);
+			name = PingPongScoreBoardTests;
+			productName = PingPongScoreBoardTests;
+			productReference = 01375E8024040BB100EB80E7 /* PingPongScoreBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01375E8A24040BB100EB80E7 /* PingPongScoreBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01375E9A24040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoardUITests" */;
+			buildPhases = (
+				01375E8724040BB100EB80E7 /* Sources */,
+				01375E8824040BB100EB80E7 /* Frameworks */,
+				01375E8924040BB100EB80E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01375E8D24040BB100EB80E7 /* PBXTargetDependency */,
+			);
+			name = PingPongScoreBoardUITests;
+			productName = PingPongScoreBoardUITests;
+			productReference = 01375E8B24040BB100EB80E7 /* PingPongScoreBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01375E6224040BB000EB80E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Hansub Yoo";
+				TargetAttributes = {
+					01375E6924040BB000EB80E7 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					01375E7F24040BB100EB80E7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 01375E6924040BB000EB80E7;
+					};
+					01375E8A24040BB100EB80E7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 01375E6924040BB000EB80E7;
+					};
+				};
+			};
+			buildConfigurationList = 01375E6524040BB000EB80E7 /* Build configuration list for PBXProject "PingPongScoreBoard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01375E6124040BB000EB80E7;
+			productRefGroup = 01375E6B24040BB000EB80E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01375E6924040BB000EB80E7 /* PingPongScoreBoard */,
+				01375E7F24040BB100EB80E7 /* PingPongScoreBoardTests */,
+				01375E8A24040BB100EB80E7 /* PingPongScoreBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01375E6824040BB000EB80E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01375E7A24040BB100EB80E7 /* LaunchScreen.storyboard in Resources */,
+				01375E7724040BB100EB80E7 /* Assets.xcassets in Resources */,
+				01375E7524040BB000EB80E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01375E7E24040BB100EB80E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01375E8924040BB100EB80E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01375E6624040BB000EB80E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01375E7224040BB000EB80E7 /* ViewController.swift in Sources */,
+				01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */,
+				01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01375E7C24040BB100EB80E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01375E8524040BB100EB80E7 /* PingPongScoreBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01375E8724040BB100EB80E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01375E9024040BB100EB80E7 /* PingPongScoreBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01375E8224040BB100EB80E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01375E6924040BB000EB80E7 /* PingPongScoreBoard */;
+			targetProxy = 01375E8124040BB100EB80E7 /* PBXContainerItemProxy */;
+		};
+		01375E8D24040BB100EB80E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01375E6924040BB000EB80E7 /* PingPongScoreBoard */;
+			targetProxy = 01375E8C24040BB100EB80E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01375E7324040BB000EB80E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01375E7424040BB000EB80E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01375E7824040BB100EB80E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01375E7924040BB100EB80E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01375E9224040BB100EB80E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01375E9324040BB100EB80E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01375E9524040BB100EB80E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = PingPongScoreBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01375E9624040BB100EB80E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = PingPongScoreBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01375E9824040BB100EB80E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = PingPongScoreBoardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingPongScoreBoard.app/PingPongScoreBoard";
+			};
+			name = Debug;
+		};
+		01375E9924040BB100EB80E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = PingPongScoreBoardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingPongScoreBoard.app/PingPongScoreBoard";
+			};
+			name = Release;
+		};
+		01375E9B24040BB100EB80E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = PingPongScoreBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PingPongScoreBoard;
+			};
+			name = Debug;
+		};
+		01375E9C24040BB100EB80E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
+				INFOPLIST_FILE = PingPongScoreBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PingPongScoreBoard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01375E6524040BB000EB80E7 /* Build configuration list for PBXProject "PingPongScoreBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01375E9224040BB100EB80E7 /* Debug */,
+				01375E9324040BB100EB80E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01375E9424040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01375E9524040BB100EB80E7 /* Debug */,
+				01375E9624040BB100EB80E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01375E9724040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01375E9824040BB100EB80E7 /* Debug */,
+				01375E9924040BB100EB80E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01375E9A24040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01375E9B24040BB100EB80E7 /* Debug */,
+				01375E9C24040BB100EB80E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01375E6224040BB000EB80E7 /* Project object */;
+}
