@@ -15,6 +15,11 @@
 		01375E7A24040BB100EB80E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01375E7824040BB100EB80E7 /* LaunchScreen.storyboard */; };
 		01375E8524040BB100EB80E7 /* PingPongScoreBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E8424040BB100EB80E7 /* PingPongScoreBoardTests.swift */; };
 		01375E9024040BB100EB80E7 /* PingPongScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E8F24040BB100EB80E7 /* PingPongScoreBoardUITests.swift */; };
+		01375E9F24040CEB00EB80E7 /* ScoreBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */; };
+		01375EA42404180100EB80E7 /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */; };
+		1B4CB1090D6447B2D11C9CBD /* Pods_PingPongScoreBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */; };
+		61C340C384ADE4F9069E16BD /* Pods_PingPongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EC35F616DAFC72EB2E7497 /* Pods_PingPongScoreBoard.framework */; };
+		A379FD9E132A9C72D0285F12 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,17 @@
 		01375E8B24040BB100EB80E7 /* PingPongScoreBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingPongScoreBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01375E8F24040BB100EB80E7 /* PingPongScoreBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPongScoreBoardUITests.swift; sourceTree = "<group>"; };
 		01375E9124040BB100EB80E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01375E9E24040CEB00EB80E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PingPongScoreBoard/Base.lproj/ScoreBoard.storyboard; sourceTree = "<group>"; };
+		01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
+		2DAB7BF81431036CBC295679 /* Pods-PingPongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoard.debug.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5D4D85DF786387432709ED /* Pods-PingPongScoreBoard-PingPongScoreBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoard-PingPongScoreBoardUITests.debug.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoard-PingPongScoreBoardUITests/Pods-PingPongScoreBoard-PingPongScoreBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1EC35F616DAFC72EB2E7497 /* Pods_PingPongScoreBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFDC05088662A7137D50C7D /* Pods-PingPongScoreBoard-PingPongScoreBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoard-PingPongScoreBoardUITests.release.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoard-PingPongScoreBoardUITests/Pods-PingPongScoreBoard-PingPongScoreBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2B3F0BBC47DA605ACADD9FE /* Pods-PingPongScoreBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoardTests.debug.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoardTests/Pods-PingPongScoreBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC40D293A73D27666F48E335 /* Pods-PingPongScoreBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoard.release.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard.release.xcconfig"; sourceTree = "<group>"; };
+		F459F75DB2D3FE63D8B6106F /* Pods-PingPongScoreBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoardTests.release.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoardTests/Pods-PingPongScoreBoardTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C340C384ADE4F9069E16BD /* Pods_PingPongScoreBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4CB1090D6447B2D11C9CBD /* Pods_PingPongScoreBoardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A379FD9E132A9C72D0285F12 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				01375E8324040BB100EB80E7 /* PingPongScoreBoardTests */,
 				01375E8E24040BB100EB80E7 /* PingPongScoreBoardUITests */,
 				01375E6B24040BB000EB80E7 /* Products */,
+				66F6F2B3C4D449F8BFAAB03D /* Pods */,
+				09B57D08E9AB37A0A88A2A6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +123,9 @@
 				01375E6D24040BB000EB80E7 /* AppDelegate.swift */,
 				01375E6F24040BB000EB80E7 /* SceneDelegate.swift */,
 				01375E7124040BB000EB80E7 /* ViewController.swift */,
-				01375E7324040BB000EB80E7 /* Main.storyboard */,
+				01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */,
+				01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */,
+				01375EA22404154E00EB80E7 /* StoryBoard */,
 				01375E7624040BB100EB80E7 /* Assets.xcassets */,
 				01375E7824040BB100EB80E7 /* LaunchScreen.storyboard */,
 				01375E7B24040BB100EB80E7 /* Info.plist */,
@@ -128,6 +151,38 @@
 			path = PingPongScoreBoardUITests;
 			sourceTree = "<group>";
 		};
+		01375EA22404154E00EB80E7 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				01375E7324040BB000EB80E7 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		09B57D08E9AB37A0A88A2A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC35F616DAFC72EB2E7497 /* Pods_PingPongScoreBoard.framework */,
+				583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */,
+				32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66F6F2B3C4D449F8BFAAB03D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DAB7BF81431036CBC295679 /* Pods-PingPongScoreBoard.debug.xcconfig */,
+				DC40D293A73D27666F48E335 /* Pods-PingPongScoreBoard.release.xcconfig */,
+				BA5D4D85DF786387432709ED /* Pods-PingPongScoreBoard-PingPongScoreBoardUITests.debug.xcconfig */,
+				CEFDC05088662A7137D50C7D /* Pods-PingPongScoreBoard-PingPongScoreBoardUITests.release.xcconfig */,
+				D2B3F0BBC47DA605ACADD9FE /* Pods-PingPongScoreBoardTests.debug.xcconfig */,
+				F459F75DB2D3FE63D8B6106F /* Pods-PingPongScoreBoardTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01375E9424040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoard" */;
 			buildPhases = (
+				55CF85537AAA641F9340DFAB /* [CP] Check Pods Manifest.lock */,
 				01375E6624040BB000EB80E7 /* Sources */,
 				01375E6724040BB000EB80E7 /* Frameworks */,
 				01375E6824040BB000EB80E7 /* Resources */,
+				E685A912241A8437FA50B9C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01375E9724040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoardTests" */;
 			buildPhases = (
+				7830B7F550D3922D2B882337 /* [CP] Check Pods Manifest.lock */,
 				01375E7C24040BB100EB80E7 /* Sources */,
 				01375E7D24040BB100EB80E7 /* Frameworks */,
 				01375E7E24040BB100EB80E7 /* Resources */,
@@ -170,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01375E9A24040BB100EB80E7 /* Build configuration list for PBXNativeTarget "PingPongScoreBoardUITests" */;
 			buildPhases = (
+				A5BFB0E71B7E0E2823C39DAE /* [CP] Check Pods Manifest.lock */,
 				01375E8724040BB100EB80E7 /* Sources */,
 				01375E8824040BB100EB80E7 /* Frameworks */,
 				01375E8924040BB100EB80E7 /* Resources */,
+				3F15D0976ED16566882E015F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01375E9F24040CEB00EB80E7 /* ScoreBoard.storyboard in Resources */,
 				01375E7A24040BB100EB80E7 /* LaunchScreen.storyboard in Resources */,
 				01375E7724040BB100EB80E7 /* Assets.xcassets in Resources */,
 				01375E7524040BB000EB80E7 /* Main.storyboard in Resources */,
@@ -254,11 +315,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F15D0976ED16566882E015F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PingPongScoreBoard-PingPongScoreBoardUITests/Pods-PingPongScoreBoard-PingPongScoreBoardUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PingPongScoreBoard-PingPongScoreBoardUITests/Pods-PingPongScoreBoard-PingPongScoreBoardUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PingPongScoreBoard-PingPongScoreBoardUITests/Pods-PingPongScoreBoard-PingPongScoreBoardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55CF85537AAA641F9340DFAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PingPongScoreBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7830B7F550D3922D2B882337 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PingPongScoreBoardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5BFB0E71B7E0E2823C39DAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PingPongScoreBoard-PingPongScoreBoardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E685A912241A8437FA50B9C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01375E6624040BB000EB80E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01375EA42404180100EB80E7 /* ScoreBoardViewController.swift in Sources */,
 				01375E7224040BB000EB80E7 /* ViewController.swift in Sources */,
 				01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */,
 				01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */,
@@ -311,6 +476,14 @@
 				01375E7924040BB100EB80E7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01375E9E24040CEB00EB80E7 /* Base */,
+			);
+			name = ScoreBoard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,6 +605,7 @@
 		};
 		01375E9524040BB100EB80E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DAB7BF81431036CBC295679 /* Pods-PingPongScoreBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +624,7 @@
 		};
 		01375E9624040BB100EB80E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC40D293A73D27666F48E335 /* Pods-PingPongScoreBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +643,7 @@
 		};
 		01375E9824040BB100EB80E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B3F0BBC47DA605ACADD9FE /* Pods-PingPongScoreBoardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +666,7 @@
 		};
 		01375E9924040BB100EB80E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F459F75DB2D3FE63D8B6106F /* Pods-PingPongScoreBoardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +689,7 @@
 		};
 		01375E9B24040BB100EB80E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5D4D85DF786387432709ED /* Pods-PingPongScoreBoard-PingPongScoreBoardUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +710,7 @@
 		};
 		01375E9C24040BB100EB80E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFDC05088662A7137D50C7D /* Pods-PingPongScoreBoard-PingPongScoreBoardUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
