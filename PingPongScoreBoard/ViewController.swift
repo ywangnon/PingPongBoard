@@ -35,5 +35,8 @@ class ViewController: UIViewController {
     }
     
     
+    @IBSegueAction func move(_ coder: NSCoder) -> UIViewController? {
+        print("move")
+        return ScoreBoardViewController(coder: coder)
+    }
 }
-
