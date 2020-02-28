@@ -32,6 +32,13 @@ class ScoreBoardViewController: UIViewController {
         self.setLandscape()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.shouldSupportLandScape = false
+        
+    }
+    
     override var shouldAutorotate: Bool {
         return true
     }

@@ -36,7 +36,8 @@ class ViewController: UIViewController {
     
     
     @IBSegueAction func move(_ coder: NSCoder) -> UIViewController? {
-        print("move")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.shouldSupportLandScape = true
         return ScoreBoardViewController(coder: coder)
     }
 }

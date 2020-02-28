@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0101489824097B84004C725D /* CommonMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101489724097B84004C725D /* CommonMethod.swift */; };
 		01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E6D24040BB000EB80E7 /* AppDelegate.swift */; };
 		01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E6F24040BB000EB80E7 /* SceneDelegate.swift */; };
 		01375E7224040BB000EB80E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E7124040BB000EB80E7 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0101489724097B84004C725D /* CommonMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethod.swift; sourceTree = "<group>"; };
 		01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01375E6D24040BB000EB80E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01375E6F24040BB000EB80E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				01375E6F24040BB000EB80E7 /* SceneDelegate.swift */,
 				01375E7124040BB000EB80E7 /* ViewController.swift */,
 				01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */,
+				0101489724097B84004C725D /* CommonMethod.swift */,
 				01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */,
 				01375EA22404154E00EB80E7 /* StoryBoard */,
 				01375E7624040BB100EB80E7 /* Assets.xcassets */,
@@ -179,7 +182,6 @@
 				D2B3F0BBC47DA605ACADD9FE /* Pods-PingPongScoreBoardTests.debug.xcconfig */,
 				F459F75DB2D3FE63D8B6106F /* Pods-PingPongScoreBoardTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -425,6 +427,7 @@
 			files = (
 				01375EA42404180100EB80E7 /* ScoreBoardViewController.swift in Sources */,
 				01375E7224040BB000EB80E7 /* ViewController.swift in Sources */,
+				0101489824097B84004C725D /* CommonMethod.swift in Sources */,
 				01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */,
 				01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */,
 			);
