@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ScoreBoardViewController: UIViewController {
 
@@ -20,11 +21,21 @@ class ScoreBoardViewController: UIViewController {
     private var redSetScorePoint: Int?
     private var blueSetScorePoint: Int?
     
+    private var score: Score?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.resetScore()
+        
         self.setNotification()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        self.setFontSize(self.redScoreLabel)
+//        self.setFontSize(self.blueScoreLabel)
+//        self.setFontSize(self.redSetScoreLabel)
+//        self.setFontSize(self.blueSetScoreLabel)
+//        
+//        self.resetScore()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,7 +47,15 @@ class ScoreBoardViewController: UIViewController {
         super.viewDidDisappear(animated)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldSupportLandScape = false
-        
+    }
+    
+    init(_ score: Score?) {
+        self.score = score
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
     
     override var shouldAutorotate: Bool {
@@ -57,17 +76,26 @@ class ScoreBoardViewController: UIViewController {
     }
     
     func resetScore() {
-        self.redScorePoint = 0
+        self.redScorePoint = 01
         self.blueScorePoint = 0
         self.redSetScorePoint = 0
         self.blueSetScorePoint = 0
+        
+        print("redScore", redScorePoint)
         
         self.redScoreLabel.text = "\(self.redScorePoint!)"
         self.blueScoreLabel.text = "\(self.blueScorePoint!)"
         self.redSetScoreLabel.text = "\(self.redSetScorePoint!)"
         self.blueSetScoreLabel.text = "\(self.blueSetScorePoint!)"
     }
-
+    
+    func setFontSize(_ label: UILabel) {
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.2
+        label.numberOfLines = 0
+        label.font = label.font.withSize(label.frame.height * 2/3)
+    }
+    
     @IBAction func redScoreTapGesture(_ sender: Any) {
         self.redScorePoint! += 1
         self.redScoreLabel.text = "\(self.redScorePoint!)"
@@ -83,6 +111,21 @@ class ScoreBoardViewController: UIViewController {
     @IBAction func blueSetScoreTapGesture(_ sender: Any) {
         self.blueSetScorePoint! += 1
         self.blueSetScoreLabel.text = "\(self.blueSetScorePoint!)"
+    }
+    
+    func updateDataBase(_ redSetScore: Int, _ blueSetScore: Int, _ redScore: Int, _ blueScore: Int) {
+        do {
+            let realm = try Realm()
+            
+            
+            
+            try realm.write {
+                
+            }
+        } catch {
+            print("update Error")
+            
+        }
     }
 }
 

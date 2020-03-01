@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0101489824097B84004C725D /* CommonMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101489724097B84004C725D /* CommonMethod.swift */; };
+		0101489A240B8CEE004C725D /* SetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01014899240B8CEE004C725D /* SetListCell.swift */; };
+		0101489C240BA034004C725D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101489B240BA034004C725D /* DataModel.swift */; };
 		01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E6D24040BB000EB80E7 /* AppDelegate.swift */; };
 		01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E6F24040BB000EB80E7 /* SceneDelegate.swift */; };
 		01375E7224040BB000EB80E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E7124040BB000EB80E7 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		0101489724097B84004C725D /* CommonMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethod.swift; sourceTree = "<group>"; };
+		01014899240B8CEE004C725D /* SetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListCell.swift; sourceTree = "<group>"; };
+		0101489B240BA034004C725D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01375E6D24040BB000EB80E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01375E6F24040BB000EB80E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,8 +129,10 @@
 				01375E6D24040BB000EB80E7 /* AppDelegate.swift */,
 				01375E6F24040BB000EB80E7 /* SceneDelegate.swift */,
 				01375E7124040BB000EB80E7 /* ViewController.swift */,
+				01014899240B8CEE004C725D /* SetListCell.swift */,
 				01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */,
 				0101489724097B84004C725D /* CommonMethod.swift */,
+				0101489B240BA034004C725D /* DataModel.swift */,
 				01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */,
 				01375EA22404154E00EB80E7 /* StoryBoard */,
 				01375E7624040BB100EB80E7 /* Assets.xcassets */,
@@ -425,8 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0101489C240BA034004C725D /* DataModel.swift in Sources */,
 				01375EA42404180100EB80E7 /* ScoreBoardViewController.swift in Sources */,
 				01375E7224040BB000EB80E7 /* ViewController.swift in Sources */,
+				0101489A240B8CEE004C725D /* SetListCell.swift in Sources */,
 				0101489824097B84004C725D /* CommonMethod.swift in Sources */,
 				01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */,
 				01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */,
