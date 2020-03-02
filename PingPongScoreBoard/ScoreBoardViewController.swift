@@ -16,26 +16,17 @@ class ScoreBoardViewController: UIViewController {
     @IBOutlet weak var redSetScoreLabel: UILabel!
     @IBOutlet weak var blueSetScoreLabel: UILabel!
     
-    private var redScorePoint: Int?
-    private var blueScorePoint: Int?
-    private var redSetScorePoint: Int?
-    private var blueSetScorePoint: Int?
-    
     private var score: Score?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setNotification()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        self.setFontSize(self.redScoreLabel)
-//        self.setFontSize(self.blueScoreLabel)
-//        self.setFontSize(self.redSetScoreLabel)
-//        self.setFontSize(self.blueSetScoreLabel)
-//        
-//        self.resetScore()
+        self.setLabel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,15 +38,6 @@ class ScoreBoardViewController: UIViewController {
         super.viewDidDisappear(animated)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldSupportLandScape = false
-    }
-    
-    init(_ score: Score?) {
-        self.score = score
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
     }
     
     override var shouldAutorotate: Bool {
@@ -71,22 +53,21 @@ class ScoreBoardViewController: UIViewController {
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     
-    func setNotification() {
-        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
+    func setScore(_ score: Score?) {
+        self.score = score
     }
     
-    func resetScore() {
-        self.redScorePoint = 01
-        self.blueScorePoint = 0
-        self.redSetScorePoint = 0
-        self.blueSetScorePoint = 0
+    func setLabel() {
+        self.setFontSize(self.redScoreLabel)
+        self.setFontSize(self.blueScoreLabel)
+        self.setFontSize(self.redSetScoreLabel)
+        self.setFontSize(self.blueSetScoreLabel)
         
-        print("redScore", redScorePoint)
-        
-        self.redScoreLabel.text = "\(self.redScorePoint!)"
-        self.blueScoreLabel.text = "\(self.blueScorePoint!)"
-        self.redSetScoreLabel.text = "\(self.redSetScorePoint!)"
-        self.blueSetScoreLabel.text = "\(self.blueSetScorePoint!)"
+        self.setLabelText()
+    }
+    
+    func setNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     func setFontSize(_ label: UILabel) {
@@ -96,21 +77,60 @@ class ScoreBoardViewController: UIViewController {
         label.font = label.font.withSize(label.frame.height * 2/3)
     }
     
+    func setLabelText() {
+        self.redScoreLabel.text = "\(self.score?.redScore ?? 0)"
+        self.blueScoreLabel.text = "\(self.score?.blueScore ?? 0)"
+        self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
+        self.blueSetScoreLabel.text = "\(self.score?.blueSetScore ?? 0)"
+    }
+    
     @IBAction func redScoreTapGesture(_ sender: Any) {
-        self.redScorePoint! += 1
-        self.redScoreLabel.text = "\(self.redScorePoint!)"
+        do {
+            let realm = try Realm()
+            
+            try realm.write {
+                self.score?.redScore += 1
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        self.redScoreLabel.text = "\(String(describing: self.score?.redScore ?? 0))"
     }
     @IBAction func blueScoreTapGesture(_ sender: Any) {
-        self.blueScorePoint! += 1
-        self.blueScoreLabel.text = "\(self.blueScorePoint!)"
+        do {
+            let realm = try Realm()
+            
+            try realm.write {
+                self.score?.blueScore += 1
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        self.blueScoreLabel.text = "\(self.score?.blueScore ?? 0)"
     }
     @IBAction func redSetScoreTapGesture(_ sender: Any) {
-        self.redSetScorePoint! += 1
-        self.redSetScoreLabel.text = "\(self.redSetScorePoint!)"
+        do {
+            let realm = try Realm()
+            
+            try realm.write {
+                self.score?.redSetScore += 1
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
     }
     @IBAction func blueSetScoreTapGesture(_ sender: Any) {
-        self.blueSetScorePoint! += 1
-        self.blueSetScoreLabel.text = "\(self.blueSetScorePoint!)"
+        do {
+            let realm = try Realm()
+            
+            try realm.write {
+                self.score?.blueSetScore += 1
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        self.blueSetScoreLabel.text = "\(self.score?.blueSetScore ?? 0)"
     }
     
     func updateDataBase(_ redSetScore: Int, _ blueSetScore: Int, _ redScore: Int, _ blueScore: Int) {

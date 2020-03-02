@@ -21,8 +21,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let value = UIDeviceOrientation.portrait.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
+        self.setPortrait()
         self.setData()
     }
     
@@ -68,11 +67,14 @@ class ViewController: UIViewController {
         return Score(redSetScore: 0, blueSetScore: 0, redScore: 0, blueScore: 0)
     }
     
-    @IBSegueAction func addSetList(_ coder: NSCoder) -> UIViewController? {
+    @IBAction func addSetList(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldSupportLandScape = true
+        let board = UIStoryboard(name: "ScoreBoard", bundle: nil)
+        let vc = board.instantiateViewController(withIdentifier: "boardVC") as! ScoreBoardViewController
         let score = self.addDataBase()
-        return ScoreBoardViewController(score)
+        vc.setScore(score)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -92,8 +94,12 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.shouldSupportLandScape = true
         let score = self.scoreDatas?[indexPath.row]
-        let boardVC = ScoreBoardViewController(score)
-        self.navigationController?.pushViewController(boardVC, animated: true)
+        let board = UIStoryboard(name: "ScoreBoard", bundle: nil)
+        let vc = board.instantiateViewController(withIdentifier: "boardVC") as! ScoreBoardViewController
+        vc.setScore(score)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
