@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         do {
             let realm = try Realm()
             
-            self.scoreDatas = realm.objects(Score.self)
+            self.scoreDatas = realm.objects(Score.self).sorted(byKeyPath: "date", ascending: false)
             
             print("data 개수", self.scoreDatas?.count)
         } catch {
@@ -101,5 +101,24 @@ extension ViewController: UITableViewDelegate {
         let vc = board.instantiateViewController(withIdentifier: "boardVC") as! ScoreBoardViewController
         vc.setScore(score)
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "삭제") { (UIContextualAction, UIView, (Bool) -> Void) in
+            print("삭제")
+            do {
+                let realm = try Realm()
+                
+                let data = self.scoreDatas![indexPath.row]
+                
+                try realm.write {
+                    realm.delete(data)
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+            self.scoreList.reloadData()
+        }
+        return UISwipeActionsConfiguration(actions: [delete])
     }
 }

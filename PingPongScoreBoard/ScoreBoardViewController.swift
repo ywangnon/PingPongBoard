@@ -83,7 +83,25 @@ class ScoreBoardViewController: UIViewController {
         self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
         self.blueSetScoreLabel.text = "\(self.score?.blueSetScore ?? 0)"
     }
-    
+}
+
+extension ScoreBoardViewController {
+    @IBAction func resetButton(_ sender: Any) {
+        do {
+            let realm = try Realm()
+            
+            try realm.write {
+                self.score?.redScore = 0
+                self.score?.blueScore = 0
+                self.score?.redSetScore = 0
+                self.score?.blueSetScore = 0
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
+        self.setLabel()
+    }
     @IBAction func redScoreTapGesture(_ sender: Any) {
         do {
             let realm = try Realm()
@@ -96,6 +114,7 @@ class ScoreBoardViewController: UIViewController {
         }
         self.redScoreLabel.text = "\(String(describing: self.score?.redScore ?? 0))"
     }
+    
     @IBAction func blueScoreTapGesture(_ sender: Any) {
         do {
             let realm = try Realm()
@@ -108,6 +127,7 @@ class ScoreBoardViewController: UIViewController {
         }
         self.blueScoreLabel.text = "\(self.score?.blueScore ?? 0)"
     }
+    
     @IBAction func redSetScoreTapGesture(_ sender: Any) {
         do {
             let realm = try Realm()
@@ -120,6 +140,7 @@ class ScoreBoardViewController: UIViewController {
         }
         self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
     }
+    
     @IBAction func blueSetScoreTapGesture(_ sender: Any) {
         do {
             let realm = try Realm()
@@ -132,20 +153,57 @@ class ScoreBoardViewController: UIViewController {
         }
         self.blueSetScoreLabel.text = "\(self.score?.blueSetScore ?? 0)"
     }
-    
-    func updateDataBase(_ redSetScore: Int, _ blueSetScore: Int, _ redScore: Int, _ blueScore: Int) {
+    @IBAction func redScoreSwipeGesture(_ sender: Any) {
+        print("red score down")
         do {
             let realm = try Realm()
             
-            
+            try realm.write {
+                self.score?.redScore -= 1
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        self.redScoreLabel.text = "\(String(describing: self.score?.redScore ?? 0))"
+    }
+    @IBAction func blueScoreSwipeGesture(_ sender: Any) {
+        print("blue score down")
+        do {
+            let realm = try Realm()
             
             try realm.write {
-                
+                self.score?.blueScore -= 1
             }
-        } catch {
-            print("update Error")
-            
+        } catch let error as NSError {
+            print(error.localizedDescription)
         }
+        self.blueScoreLabel.text = "\(self.score?.blueScore ?? 0)"
+    }
+    @IBAction func redSetScoreSwipeGesture(_ sender: Any) {
+        print("red Set score down")
+        do {
+            let realm = try Realm()
+            
+            try realm.write {
+                self.score?.redSetScore -= 1
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
+    }
+    @IBAction func blueSetScoreSwipeGesture(_ sender: Any) {
+        print("blue Set score down")
+        do {
+            let realm = try Realm()
+            
+            try realm.write {
+                self.score?.redSetScore -= 1
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
     }
 }
 
