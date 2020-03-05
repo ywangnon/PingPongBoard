@@ -20,6 +20,8 @@
 		01375E9024040BB100EB80E7 /* PingPongScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375E8F24040BB100EB80E7 /* PingPongScoreBoardUITests.swift */; };
 		01375E9F24040CEB00EB80E7 /* ScoreBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */; };
 		01375EA42404180100EB80E7 /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */; };
+		0138B0FA24112FF3009C19C1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0138B0FC24112FF3009C19C1 /* Localizable.strings */; };
+		0138B1032411309D009C19C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0138B1052411309D009C19C1 /* InfoPlist.strings */; };
 		1B4CB1090D6447B2D11C9CBD /* Pods_PingPongScoreBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */; };
 		61C340C384ADE4F9069E16BD /* Pods_PingPongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EC35F616DAFC72EB2E7497 /* Pods_PingPongScoreBoard.framework */; };
 		A379FD9E132A9C72D0285F12 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */; };
@@ -46,7 +48,7 @@
 		0101489724097B84004C725D /* CommonMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethod.swift; sourceTree = "<group>"; };
 		01014899240B8CEE004C725D /* SetListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListCell.swift; sourceTree = "<group>"; };
 		0101489B240BA034004C725D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01375E6A24040BB000EB80E7 /* 점수판!!!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "점수판!!!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01375E6D24040BB000EB80E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01375E6F24040BB000EB80E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01375E7124040BB000EB80E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,13 @@
 		01375E9124040BB100EB80E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01375E9E24040CEB00EB80E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PingPongScoreBoard/Base.lproj/ScoreBoard.storyboard; sourceTree = "<group>"; };
 		01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
+		0138B0FB24112FF3009C19C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0138B0FD24113014009C19C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = PingPongScoreBoard/ko.lproj/ScoreBoard.strings; sourceTree = "<group>"; };
+		0138B0FE24113014009C19C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		0138B0FF24113015009C19C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0138B10024113015009C19C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0138B1042411309D009C19C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0138B106241130A0009C19C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2DAB7BF81431036CBC295679 /* Pods-PingPongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoard.debug.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +125,7 @@
 		01375E6B24040BB000EB80E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */,
+				01375E6A24040BB000EB80E7 /* 점수판!!!.app */,
 				01375E8024040BB100EB80E7 /* PingPongScoreBoardTests.xctest */,
 				01375E8B24040BB100EB80E7 /* PingPongScoreBoardUITests.xctest */,
 			);
@@ -138,6 +147,8 @@
 				01375E7624040BB100EB80E7 /* Assets.xcassets */,
 				01375E7824040BB100EB80E7 /* LaunchScreen.storyboard */,
 				01375E7B24040BB100EB80E7 /* Info.plist */,
+				0138B1052411309D009C19C1 /* InfoPlist.strings */,
+				0138B0FC24112FF3009C19C1 /* Localizable.strings */,
 			);
 			path = PingPongScoreBoard;
 			sourceTree = "<group>";
@@ -210,7 +221,7 @@
 			);
 			name = PingPongScoreBoard;
 			productName = PingPongScoreBoard;
-			productReference = 01375E6A24040BB000EB80E7 /* PingPongScoreBoard.app */;
+			productReference = 01375E6A24040BB000EB80E7 /* 점수판!!!.app */;
 			productType = "com.apple.product-type.application";
 		};
 		01375E7F24040BB100EB80E7 /* PingPongScoreBoardTests */ = {
@@ -282,6 +293,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 01375E6124040BB000EB80E7;
 			productRefGroup = 01375E6B24040BB000EB80E7 /* Products */;
@@ -300,6 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0138B0FA24112FF3009C19C1 /* Localizable.strings in Resources */,
+				0138B1032411309D009C19C1 /* InfoPlist.strings in Resources */,
 				01375E9F24040CEB00EB80E7 /* ScoreBoard.storyboard in Resources */,
 				01375E7A24040BB100EB80E7 /* LaunchScreen.storyboard in Resources */,
 				01375E7724040BB100EB80E7 /* Assets.xcassets in Resources */,
@@ -477,6 +491,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				01375E7424040BB000EB80E7 /* Base */,
+				0138B0FE24113014009C19C1 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -485,6 +500,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				01375E7924040BB100EB80E7 /* Base */,
+				0138B0FF24113015009C19C1 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -493,8 +509,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				01375E9E24040CEB00EB80E7 /* Base */,
+				0138B0FD24113014009C19C1 /* ko */,
 			);
 			name = ScoreBoard.storyboard;
+			sourceTree = "<group>";
+		};
+		0138B0FC24112FF3009C19C1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0138B0FB24112FF3009C19C1 /* en */,
+				0138B10024113015009C19C1 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0138B1052411309D009C19C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0138B1042411309D009C19C1 /* ko */,
+				0138B106241130A0009C19C1 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -504,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -564,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -628,7 +665,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "점수판!!!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -648,7 +685,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.YooHansub.Question2.PingPongScoreBoard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "점수판!!!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
