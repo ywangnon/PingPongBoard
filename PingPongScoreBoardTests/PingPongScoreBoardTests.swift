@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import PingPongScoreBoard
 
 class PingPongScoreBoardTests: XCTestCase {
 

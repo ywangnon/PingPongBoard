@@ -83,6 +83,8 @@ class ScoreBoardViewController: UIViewController {
         self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
         self.blueSetScoreLabel.text = "\(self.score?.blueSetScore ?? 0)"
     }
+    
+    
 }
 
 extension ScoreBoardViewController {
