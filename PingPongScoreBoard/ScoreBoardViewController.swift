@@ -87,6 +87,9 @@ class ScoreBoardViewController: UIViewController {
 }
 
 extension ScoreBoardViewController {
+    @IBAction func infomationButton(_ sender: Any) {
+        
+    }
     /// 모든 점수 0으로 초기화
     @IBAction func resetButton(_ sender: Any) {
         do {
