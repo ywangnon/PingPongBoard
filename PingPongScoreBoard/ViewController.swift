@@ -38,13 +38,13 @@ class ViewController: UIViewController {
         return [.portrait]
     }
     
+    /// 데이터 세팅
     func setData() {
         do {
             let realm = try Realm()
             
             self.scoreDatas = realm.objects(Score.self).sorted(byKeyPath: "date", ascending: false)
             
-            print("data 개수", self.scoreDatas?.count)
         } catch {
             print("Set Database Error")
         }
