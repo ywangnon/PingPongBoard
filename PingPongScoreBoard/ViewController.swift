@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         self.setData()
     }
     
+    /// 디바이스 방향 세로로 고정
     func setPortrait() {
         let value = UIDeviceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
@@ -51,6 +52,8 @@ class ViewController: UIViewController {
         self.scoreList.reloadData()
     }
     
+    /// 새로운 점수판에 사용할 점수 DB 생성
+    /// - Returns: 점수
     func addDataBase() -> Score {
         do {
             let realm = try Realm()
@@ -67,6 +70,8 @@ class ViewController: UIViewController {
         return Score(redSetScore: 0, blueSetScore: 0, redScore: 0, blueScore: 0)
     }
     
+    /// 점수판 추가
+    /// - Parameter sender: 버튼
     @IBAction func addSetList(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldSupportLandScape = true
