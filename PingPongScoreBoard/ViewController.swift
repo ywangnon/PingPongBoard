@@ -109,7 +109,7 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let delete = UIContextualAction(style: .destructive, title: "삭제") { (UIContextualAction, UIView, (Bool) -> Void) in
+        let delete = UIContextualAction(style: .destructive, title: "삭제") { (UIContextualAction, UIView, _: (Bool) -> Void) in
             do {
                 let realm = try Realm()
                 
