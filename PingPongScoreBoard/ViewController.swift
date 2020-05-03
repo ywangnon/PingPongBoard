@@ -25,16 +25,19 @@ class ViewController: UIViewController {
         self.setData()
     }
     
-    /// 디바이스 방향 세로로 고정
+    
+    /// 디바이스에 내가 원하는 방향을 알린다. 세로 방향
     func setPortrait() {
         let value = UIDeviceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
     }
     
+    /// 화면 회전 가능 여부
     override var shouldAutorotate: Bool {
         return true
     }
     
+    /// 원하는 화면 회전 방향
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return [.portrait]
     }
