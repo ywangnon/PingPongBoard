@@ -90,7 +90,9 @@ class ScoreBoardViewController: UIViewController {
 
 extension ScoreBoardViewController {
     @IBAction func infomationButton(_ sender: Any) {
-        
+        let manualVC = ManualViewController()
+        manualVC.modalPresentationStyle = .overFullScreen
+        present(manualVC, animated: true, completion: nil)
     }
     /// 모든 점수 0으로 초기화
     @IBAction func resetButton(_ sender: Any) {
