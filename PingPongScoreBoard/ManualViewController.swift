@@ -17,6 +17,12 @@ class ManualViewController: UIViewController {
         return view
     }()
     
+    var closeButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +39,8 @@ class ManualViewController: UIViewController {
     }
     
     func setAddSubViews() {
-        self.view.addSubview(manualView)
+        self.view.addSubview(self.manualView)
+        self.view.addSubview(self.closeButton)
     }
     
     func setLayouts() {
@@ -42,6 +49,10 @@ class ManualViewController: UIViewController {
             self.manualView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
             self.manualView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5),
             self.manualView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.8)
+        ])
+        
+        NSLayoutConstraint.activate([
+            self.closeButton.widthAnchor.constraint(equalTo: )
         ])
     }
     
