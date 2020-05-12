@@ -227,6 +227,7 @@ extension ScoreBoardViewController {
         }
         self.blueSetScoreLabel.text = "\(self.score?.blueSetScore ?? 0)"
     }
+    // 빨강 점수 초기화
     @IBAction func redScoreLongPressed(_ sender: Any) {
         do {
             let realm = try Realm()
@@ -240,6 +241,7 @@ extension ScoreBoardViewController {
         self.redScoreLabel.text = "\(self.score?.redScore ?? 0)"
         
     }
+    // 파랑 점수 초기화
     @IBAction func blueScoreLongPressed(_ sender: Any) {
         do {
             let realm = try Realm()
@@ -252,6 +254,7 @@ extension ScoreBoardViewController {
         }
         self.blueScoreLabel.text = "\(self.score?.blueScore ?? 0)"
     }
+    // 빨강 세트 점수 초기화
     @IBAction func redSetScoreLongPressed(_ sender: Any) {
         do {
             let realm = try Realm()
@@ -264,6 +267,7 @@ extension ScoreBoardViewController {
         }
         self.redSetScoreLabel.text = "\(self.score?.redSetScore ?? 0)"
     }
+    // 파랑 세트 점수 초기화
     @IBAction func blueSetScoreLongPressed(_ sender: Any) {
         do {
             let realm = try Realm()
