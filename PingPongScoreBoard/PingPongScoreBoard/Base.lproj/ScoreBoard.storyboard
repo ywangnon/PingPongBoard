@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TBl-2E-KSm">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--점수판!!!-->
+        <scene sceneID="ARS-Lv-GPK">
+            <objects>
+                <viewController storyboardIdentifier="boardVC" id="TBl-2E-KSm" customClass="ScoreBoardViewController" customModule="점수판___" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hXJ-HP-q74">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i9-HW-6T7">
+                                <rect key="frame" x="44" y="69" width="276" height="276"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4i9-HW-6T7" secondAttribute="height" multiplier="1:1" id="xFd-zZ-Xr1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hY7-2M-XZV" appends="YES" id="EYb-nF-r9W"/>
+                                    <outletCollection property="gestureRecognizers" destination="MFi-aq-6mS" appends="YES" id="UPc-J1-7JO"/>
+                                    <outletCollection property="gestureRecognizers" destination="mbu-KN-bcW" appends="YES" id="EyP-s4-xSP"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5j-CB-jjm">
+                                <rect key="frame" x="576" y="69" width="276" height="276"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f5j-CB-jjm" secondAttribute="height" multiplier="1:1" id="HVf-pc-msu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="4" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.17999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VaU-YA-zeg" appends="YES" id="ClW-uQ-lEA"/>
+                                    <outletCollection property="gestureRecognizers" destination="L2i-RF-z8O" appends="YES" id="R5s-4S-Lak"/>
+                                    <outletCollection property="gestureRecognizers" destination="bzW-JM-5mB" appends="YES" id="Au3-Nr-A1j"/>
+                                </connections>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLW-KT-IwC">
+                                <rect key="frame" x="320" y="69" width="128" height="276"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAp-b5-H1o">
+                                        <rect key="frame" x="32" y="0.0" width="64" height="64"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KAp-b5-H1o" secondAttribute="height" multiplier="1:1" id="7u6-WY-gsc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Ump-Ne-hr3" appends="YES" id="ov7-ts-tRo"/>
+                                            <outletCollection property="gestureRecognizers" destination="Fba-Pm-pNQ" appends="YES" id="9E1-vN-Pm6"/>
+                                            <outletCollection property="gestureRecognizers" destination="VaL-jb-kfj" appends="YES" id="NA1-Fq-ykk"/>
+                                        </connections>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="KAp-b5-H1o" firstAttribute="width" secondItem="KLW-KT-IwC" secondAttribute="width" multiplier="1:2" id="gQp-C2-ZFs"/>
+                                    <constraint firstItem="KAp-b5-H1o" firstAttribute="centerX" secondItem="KLW-KT-IwC" secondAttribute="centerX" id="h7j-Uy-uXH"/>
+                                    <constraint firstItem="KAp-b5-H1o" firstAttribute="top" secondItem="KLW-KT-IwC" secondAttribute="top" id="hwz-W1-IPX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB4-VY-yQ5">
+                                <rect key="frame" x="448" y="69" width="128" height="276"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4M-L7-ifq">
+                                        <rect key="frame" x="32" y="0.0" width="64" height="64"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="z4M-L7-ifq" secondAttribute="height" multiplier="1:1" id="EtQ-Iy-Hko"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="1jX-xs-tWz" appends="YES" id="6gL-aV-l3c"/>
+                                            <outletCollection property="gestureRecognizers" destination="zhd-D2-Z91" appends="YES" id="9OI-XZ-YTf"/>
+                                            <outletCollection property="gestureRecognizers" destination="enT-1X-16h" appends="YES" id="YGj-ax-Vp4"/>
+                                        </connections>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="z4M-L7-ifq" firstAttribute="width" secondItem="tB4-VY-yQ5" secondAttribute="width" multiplier="1:2" id="S4e-X6-FBh"/>
+                                    <constraint firstItem="z4M-L7-ifq" firstAttribute="centerX" secondItem="tB4-VY-yQ5" secondAttribute="centerX" id="eWj-Ai-Tq3"/>
+                                    <constraint firstItem="z4M-L7-ifq" firstAttribute="top" secondItem="tB4-VY-yQ5" secondAttribute="top" id="mSx-aw-0Si"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="KLW-KT-IwC" firstAttribute="top" secondItem="4i9-HW-6T7" secondAttribute="top" id="1yo-Q4-w5b"/>
+                            <constraint firstItem="4i9-HW-6T7" firstAttribute="height" secondItem="hXJ-HP-q74" secondAttribute="height" multiplier="2:3" id="3dY-DO-p7s"/>
+                            <constraint firstItem="4i9-HW-6T7" firstAttribute="bottom" secondItem="KLW-KT-IwC" secondAttribute="bottom" id="Edv-QJ-Ehm"/>
+                            <constraint firstItem="8sF-bU-9jP" firstAttribute="trailing" secondItem="f5j-CB-jjm" secondAttribute="trailing" id="PbX-Zl-kxH"/>
+                            <constraint firstItem="tB4-VY-yQ5" firstAttribute="leading" secondItem="hXJ-HP-q74" secondAttribute="centerX" id="UJN-jS-Hhe"/>
+                            <constraint firstItem="4i9-HW-6T7" firstAttribute="centerY" secondItem="hXJ-HP-q74" secondAttribute="centerY" id="aWj-Yf-T8E"/>
+                            <constraint firstItem="4i9-HW-6T7" firstAttribute="leading" secondItem="8sF-bU-9jP" secondAttribute="leading" id="bl9-PO-lNf"/>
+                            <constraint firstItem="tB4-VY-yQ5" firstAttribute="bottom" secondItem="f5j-CB-jjm" secondAttribute="bottom" id="cow-LF-BZc"/>
+                            <constraint firstItem="KLW-KT-IwC" firstAttribute="leading" secondItem="4i9-HW-6T7" secondAttribute="trailing" id="dMZ-Ch-qTo"/>
+                            <constraint firstItem="tB4-VY-yQ5" firstAttribute="top" secondItem="f5j-CB-jjm" secondAttribute="top" id="m9Q-1U-IdU"/>
+                            <constraint firstItem="f5j-CB-jjm" firstAttribute="leading" secondItem="tB4-VY-yQ5" secondAttribute="trailing" id="q0W-xr-EzS"/>
+                            <constraint firstAttribute="centerX" secondItem="KLW-KT-IwC" secondAttribute="trailing" id="qNe-36-zrX"/>
+                            <constraint firstItem="f5j-CB-jjm" firstAttribute="centerY" secondItem="hXJ-HP-q74" secondAttribute="centerY" id="s6J-LA-cxm"/>
+                            <constraint firstItem="f5j-CB-jjm" firstAttribute="height" secondItem="hXJ-HP-q74" secondAttribute="height" multiplier="2:3" id="vIG-l0-K4r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8sF-bU-9jP"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="점수판!!!" id="sC7-u1-OnA">
+                        <rightBarButtonItems>
+                            <barButtonItem title="info" image="info.circle" catalog="system" id="lMx-FA-zrk">
+                                <connections>
+                                    <action selector="infomationButton:" destination="TBl-2E-KSm" id="6mW-Pf-Pnb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="arrow.clockwise" catalog="system" id="xTa-dl-I1x" userLabel="refresh">
+                                <connections>
+                                    <action selector="resetButton:" destination="TBl-2E-KSm" id="Fea-GR-gFX"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="blueScoreLabel" destination="f5j-CB-jjm" id="pII-Jm-MME"/>
+                        <outlet property="blueSetScoreLabel" destination="z4M-L7-ifq" id="UP6-Og-J64"/>
+                        <outlet property="redScoreLabel" destination="4i9-HW-6T7" id="KMR-YH-wSE"/>
+                        <outlet property="redSetScoreLabel" destination="KAp-b5-H1o" id="URl-rW-4tE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tk8-5d-I5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hY7-2M-XZV" userLabel="Red Score Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="redScoreTapGesture:" destination="TBl-2E-KSm" id="rgl-uV-1Td"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VaU-YA-zeg" userLabel="Blue Score Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="blueScoreTapGesture:" destination="TBl-2E-KSm" id="FjY-km-NYf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ump-Ne-hr3" userLabel="Red Set Score Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="redSetScoreTapGesture:" destination="TBl-2E-KSm" id="ALi-hE-l0j"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1jX-xs-tWz" userLabel="Blue Set Score Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="blueSetScoreTapGesture:" destination="TBl-2E-KSm" id="OzH-15-L5p"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="MFi-aq-6mS" userLabel="Red Score Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="redScoreSwipeGesture:" destination="TBl-2E-KSm" id="4Jn-zr-4TD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="L2i-RF-z8O" userLabel="Blue Score Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="blueScoreSwipeGesture:" destination="TBl-2E-KSm" id="bT6-n4-JfR"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Fba-Pm-pNQ" userLabel="Red Set Score Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="redSetScoreSwipeGesture:" destination="TBl-2E-KSm" id="cel-VO-Cfn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="zhd-D2-Z91" userLabel="Blue Set Score Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="blueSetScoreSwipeGesture:" destination="TBl-2E-KSm" id="3FC-AT-Fl8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mbu-KN-bcW" userLabel="Red Score Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="redScoreLongPressed:" destination="TBl-2E-KSm" id="gTB-YI-Ysb"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="bzW-JM-5mB" userLabel="Blue Score Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="blueScoreLongPressed:" destination="TBl-2E-KSm" id="2k4-CZ-vww"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="VaL-jb-kfj" userLabel="Red Set Score Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="redSetScoreLongPressed:" destination="TBl-2E-KSm" id="HTU-MT-jbm"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="enT-1X-16h" userLabel="Blue Set Score Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="blueSetScoreLongPressed:" destination="TBl-2E-KSm" id="PbV-Mn-LYe"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1619" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

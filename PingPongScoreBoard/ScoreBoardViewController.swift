@@ -21,8 +21,6 @@ class ScoreBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.setNotification()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -67,10 +65,6 @@ class ScoreBoardViewController: UIViewController {
         
         self.setLabelText()
     }
-    
-//    func setNotification() {
-//        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
-//    }
     
     func setFontSize(_ label: UILabel) {
         label.adjustsFontSizeToFitWidth = true
@@ -280,10 +274,4 @@ extension ScoreBoardViewController {
         }
         self.blueSetScoreLabel.text = "\(self.score?.blueSetScore ?? 0)"
     }
-}
-
-extension ScoreBoardViewController {
-//    @objc func willEnterForeground(_ noti: Notification) {
-//        self.setLandscape()
-//    }
 }
