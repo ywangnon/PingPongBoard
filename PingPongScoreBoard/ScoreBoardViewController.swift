@@ -32,25 +32,15 @@ class ScoreBoardViewController: UIViewController {
         self.setLandscape()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldSupportLandScape = false
     }
+    
     /// 디바이스에 내가 원하는 방향을 알린다. 가로 방향
     func setLandscape() {
         let value = UIDeviceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
-    }
-    
-    /// 화면 회전 가능 여부
-    override var shouldAutorotate: Bool {
-        return true
-    }
-    
-    /// 원하는 화면 회전 방향
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return [.landscapeLeft]
     }
     
     func setScore(_ score: Score?) {

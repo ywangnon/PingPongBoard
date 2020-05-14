@@ -34,16 +34,19 @@ class ViewController: UIViewController {
     
     /// 화면 회전 가능 여부
     override var shouldAutorotate: Bool {
+        print("리스트 회전 가능")
         return true
     }
-    
+
     /// 원하는 화면 회전 방향
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        print("리스트 회전 방향")
         return [.portrait]
     }
     
     /// 데이터 세팅
     func setData() {
+        
         do {
             let realm = try Realm()
             
