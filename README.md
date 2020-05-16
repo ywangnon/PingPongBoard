@@ -1,8 +1,8 @@
-# [점수판!!!](https://apps.apple.com/us/app/점수판/id1501335416?l=ko&ls=1)
+<h1 align="center">점수판!!!</h1>
 
+![title](https://img.shields.io/badge/iOS-13.0-orange)
 
-
-
+[![점수판!!!](https://devimages-cdn.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store-kr.svg)](https://apps.apple.com/us/app/점수판/id1501335416?l=ko&ls=1)
 
 - 부모님이 탁구를 하고 싶어하시는 것을 듣고 탁구 점수판을 참고하여 만들었습니다.
 
