@@ -6,7 +6,8 @@
 
 ## Contents
 
-[toc]
+1. [Concept](#concept)
+2. [Code](#code)
 
 ## Concept
 
