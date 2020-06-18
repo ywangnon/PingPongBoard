@@ -22,6 +22,8 @@
 		0138B0FA24112FF3009C19C1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0138B0FC24112FF3009C19C1 /* Localizable.strings */; };
 		0138B1032411309D009C19C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0138B1052411309D009C19C1 /* InfoPlist.strings */; };
 		019AE1B024604FA3005F74F5 /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019AE1AF24604FA3005F74F5 /* ManualViewController.swift */; };
+		01B61665249B9B0600CB52B4 /* Manual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B61664249B9B0600CB52B4 /* Manual.storyboard */; };
+		01B61667249B9C4200CB52B4 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B61666249B9C4200CB52B4 /* StoryboardExtension.swift */; };
 		1B4CB1090D6447B2D11C9CBD /* Pods_PingPongScoreBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */; };
 		61C340C384ADE4F9069E16BD /* Pods_PingPongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EC35F616DAFC72EB2E7497 /* Pods_PingPongScoreBoard.framework */; };
 		A379FD9E132A9C72D0285F12 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */; };
@@ -71,6 +73,9 @@
 		0138B1042411309D009C19C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0138B106241130A0009C19C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		019AE1AF24604FA3005F74F5 /* ManualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
+		01B61663249B9AC400CB52B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		01B61664249B9B0600CB52B4 /* Manual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Manual.storyboard; sourceTree = "<group>"; };
+		01B61666249B9C4200CB52B4 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
 		2DAB7BF81431036CBC295679 /* Pods-PingPongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoard.debug.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +145,9 @@
 				01375E7124040BB000EB80E7 /* ViewController.swift */,
 				01014899240B8CEE004C725D /* SetListCell.swift */,
 				01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */,
+				01B61666249B9C4200CB52B4 /* StoryboardExtension.swift */,
 				019AE1AF24604FA3005F74F5 /* ManualViewController.swift */,
+				01B61664249B9B0600CB52B4 /* Manual.storyboard */,
 				0101489B240BA034004C725D /* DataModel.swift */,
 				01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */,
 				01375EA22404154E00EB80E7 /* StoryBoard */,
@@ -312,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B61665249B9B0600CB52B4 /* Manual.storyboard in Resources */,
 				0138B0FA24112FF3009C19C1 /* Localizable.strings in Resources */,
 				0138B1032411309D009C19C1 /* InfoPlist.strings in Resources */,
 				01375E9F24040CEB00EB80E7 /* ScoreBoard.storyboard in Resources */,
@@ -447,6 +455,7 @@
 			files = (
 				0101489C240BA034004C725D /* DataModel.swift in Sources */,
 				01375EA42404180100EB80E7 /* ScoreBoardViewController.swift in Sources */,
+				01B61667249B9C4200CB52B4 /* StoryboardExtension.swift in Sources */,
 				01375E7224040BB000EB80E7 /* ViewController.swift in Sources */,
 				0101489A240B8CEE004C725D /* SetListCell.swift in Sources */,
 				01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */,
@@ -492,6 +501,7 @@
 			children = (
 				01375E7424040BB000EB80E7 /* Base */,
 				0138B0FE24113014009C19C1 /* ko */,
+				01B61663249B9AC400CB52B4 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
