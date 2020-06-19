@@ -27,13 +27,38 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyV-Oj-sVn">
+                                        <rect key="frame" x="336" y="340.66666666666669" width="224" height="24"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="gY6-4R-XWg"/>
+                                        </constraints>
+                                        <state key="normal" title="닫기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wWu-w2-W0s">
+                                        <rect key="frame" x="232" y="49.333333333333343" width="432" height="283.33333333333326"/>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="hyV-Oj-sVn" firstAttribute="centerX" secondItem="C8n-qG-ShA" secondAttribute="centerX" id="5PF-jY-INC"/>
+                                    <constraint firstItem="wWu-w2-W0s" firstAttribute="top" secondItem="C8n-qG-ShA" secondAttribute="top" constant="8" id="5jh-q2-Zc3"/>
                                     <constraint firstItem="C8n-qG-ShA" firstAttribute="centerX" secondItem="1BM-w7-QRg" secondAttribute="centerX" id="9HU-zb-llX"/>
+                                    <constraint firstItem="wWu-w2-W0s" firstAttribute="bottom" secondItem="hyV-Oj-sVn" secondAttribute="top" constant="-8" id="BB1-E0-SS4"/>
                                     <constraint firstItem="C8n-qG-ShA" firstAttribute="height" secondItem="1BM-w7-QRg" secondAttribute="height" multiplier="0.8" id="Xac-Aw-UhE"/>
+                                    <constraint firstItem="hyV-Oj-sVn" firstAttribute="bottom" secondItem="C8n-qG-ShA" secondAttribute="bottom" constant="-8" id="dlM-o0-TnK"/>
                                     <constraint firstItem="C8n-qG-ShA" firstAttribute="width" secondItem="1BM-w7-QRg" secondAttribute="width" multiplier="0.5" id="hee-D8-a2u"/>
+                                    <constraint firstItem="wWu-w2-W0s" firstAttribute="trailing" secondItem="C8n-qG-ShA" secondAttribute="trailing" constant="-8" id="hyD-yo-leg"/>
+                                    <constraint firstItem="wWu-w2-W0s" firstAttribute="leading" secondItem="C8n-qG-ShA" secondAttribute="leading" constant="8" id="myc-Y2-cuE"/>
                                     <constraint firstItem="C8n-qG-ShA" firstAttribute="centerY" secondItem="1BM-w7-QRg" secondAttribute="centerY" id="pDp-0D-2B9"/>
+                                    <constraint firstItem="hyV-Oj-sVn" firstAttribute="width" secondItem="C8n-qG-ShA" secondAttribute="width" multiplier="0.5" id="zJu-M9-A88"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -142,15 +142,11 @@
 			children = (
 				01375E6D24040BB000EB80E7 /* AppDelegate.swift */,
 				01375E6F24040BB000EB80E7 /* SceneDelegate.swift */,
-				01375E7124040BB000EB80E7 /* ViewController.swift */,
-				01014899240B8CEE004C725D /* SetListCell.swift */,
-				01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */,
 				01B61666249B9C4200CB52B4 /* StoryboardExtension.swift */,
-				019AE1AF24604FA3005F74F5 /* ManualViewController.swift */,
-				01B61664249B9B0600CB52B4 /* Manual.storyboard */,
+				01B61668249CE9C200CB52B4 /* Main */,
+				01B6166A249CEA3400CB52B4 /* ManualBoard */,
+				01B61669249CEA0600CB52B4 /* ScoreBoard */,
 				0101489B240BA034004C725D /* DataModel.swift */,
-				01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */,
-				01375EA22404154E00EB80E7 /* StoryBoard */,
 				01375E7624040BB100EB80E7 /* Assets.xcassets */,
 				01375E7824040BB100EB80E7 /* LaunchScreen.storyboard */,
 				01375E7B24040BB100EB80E7 /* Info.plist */,
@@ -178,12 +174,32 @@
 			path = PingPongScoreBoardUITests;
 			sourceTree = "<group>";
 		};
-		01375EA22404154E00EB80E7 /* StoryBoard */ = {
+		01B61668249CE9C200CB52B4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				01375E7124040BB000EB80E7 /* ViewController.swift */,
+				01014899240B8CEE004C725D /* SetListCell.swift */,
 				01375E7324040BB000EB80E7 /* Main.storyboard */,
 			);
-			path = StoryBoard;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		01B61669249CEA0600CB52B4 /* ScoreBoard */ = {
+			isa = PBXGroup;
+			children = (
+				01375EA32404180100EB80E7 /* ScoreBoardViewController.swift */,
+				01375E9D24040CEB00EB80E7 /* ScoreBoard.storyboard */,
+			);
+			path = ScoreBoard;
+			sourceTree = "<group>";
+		};
+		01B6166A249CEA3400CB52B4 /* ManualBoard */ = {
+			isa = PBXGroup;
+			children = (
+				019AE1AF24604FA3005F74F5 /* ManualViewController.swift */,
+				01B61664249B9B0600CB52B4 /* Manual.storyboard */,
+			);
+			path = ManualBoard;
 			sourceTree = "<group>";
 		};
 		09B57D08E9AB37A0A88A2A6E /* Frameworks */ = {
