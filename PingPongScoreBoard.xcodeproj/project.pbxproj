@@ -25,6 +25,7 @@
 		01B61665249B9B0600CB52B4 /* Manual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B61664249B9B0600CB52B4 /* Manual.storyboard */; };
 		01B61667249B9C4200CB52B4 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B61666249B9C4200CB52B4 /* StoryboardExtension.swift */; };
 		01B6166C249E4FD300CB52B4 /* FunctionDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B6166B249E4FD300CB52B4 /* FunctionDescriptionView.xib */; };
+		01B61670249F986C00CB52B4 /* FunctionDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B6166F249F986C00CB52B4 /* FunctionDescriptionView.swift */; };
 		1B4CB1090D6447B2D11C9CBD /* Pods_PingPongScoreBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */; };
 		61C340C384ADE4F9069E16BD /* Pods_PingPongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EC35F616DAFC72EB2E7497 /* Pods_PingPongScoreBoard.framework */; };
 		A379FD9E132A9C72D0285F12 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */; };
@@ -79,6 +80,7 @@
 		01B61666249B9C4200CB52B4 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
 		01B6166B249E4FD300CB52B4 /* FunctionDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionDescriptionView.xib; sourceTree = "<group>"; };
 		01B6166E249E511A00CB52B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = PingPongScoreBoard/en.lproj/ScoreBoard.strings; sourceTree = "<group>"; };
+		01B6166F249F986C00CB52B4 /* FunctionDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionDescriptionView.swift; sourceTree = "<group>"; };
 		2DAB7BF81431036CBC295679 /* Pods-PingPongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongScoreBoard.debug.xcconfig"; path = "Target Support Files/Pods-PingPongScoreBoard/Pods-PingPongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		32CAF7F89D1DD6C10BC8DB61 /* Pods_PingPongScoreBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583449B6A13EF10D4EBD9D32 /* Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongScoreBoard_PingPongScoreBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			children = (
 				019AE1AF24604FA3005F74F5 /* ManualViewController.swift */,
 				01B61664249B9B0600CB52B4 /* Manual.storyboard */,
+				01B6166F249F986C00CB52B4 /* FunctionDescriptionView.swift */,
 				01B6166B249E4FD300CB52B4 /* FunctionDescriptionView.xib */,
 			);
 			path = ManualBoard;
@@ -479,6 +482,7 @@
 				01B61667249B9C4200CB52B4 /* StoryboardExtension.swift in Sources */,
 				01375E7224040BB000EB80E7 /* ViewController.swift in Sources */,
 				0101489A240B8CEE004C725D /* SetListCell.swift in Sources */,
+				01B61670249F986C00CB52B4 /* FunctionDescriptionView.swift in Sources */,
 				01375E6E24040BB000EB80E7 /* AppDelegate.swift in Sources */,
 				019AE1B024604FA3005F74F5 /* ManualViewController.swift in Sources */,
 				01375E7024040BB000EB80E7 /* SceneDelegate.swift in Sources */,
