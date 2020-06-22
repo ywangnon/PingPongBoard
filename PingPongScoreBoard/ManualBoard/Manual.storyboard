@@ -44,6 +44,52 @@
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wWu-w2-W0s">
                                         <rect key="frame" x="232" y="49.333333333333343" width="432" height="283.33333333333326"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClI-sH-8as">
+                                                <rect key="frame" x="0.0" y="0.0" width="432" height="0.0"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="MFj-kC-ekG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19r-8g-oJp" customClass="FunctionDescriptionView" customModule="점수판___" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="432" height="51.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-ua-zKG">
+                                                <rect key="frame" x="0.0" y="51.666666666666664" width="432" height="0.0"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="1bC-i6-drp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDR-1h-3Hh" customClass="FunctionDescriptionView" customModule="점수판___" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="51.666666666666657" width="432" height="52"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-1i-1et">
+                                                <rect key="frame" x="0.0" y="103.66666666666666" width="432" height="0.0"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="6Um-mY-gp0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gL-aT-NSN" customClass="FunctionDescriptionView" customModule="점수판___" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="103.66666666666667" width="432" height="51.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-1J-vVz">
+                                                <rect key="frame" x="0.0" y="155.33333333333331" width="432" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="YYi-gM-uCR"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8gL-aT-NSN" firstAttribute="height" secondItem="19r-8g-oJp" secondAttribute="height" id="ApM-Rn-SW7"/>
+                                            <constraint firstItem="UDR-1h-3Hh" firstAttribute="height" secondItem="19r-8g-oJp" secondAttribute="height" id="N1b-Jg-b0Q"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -8,8 +8,8 @@
 
 import UIKit
 
+@IBDesignable
 class FunctionDescriptionView: UIView {
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
