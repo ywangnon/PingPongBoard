@@ -10,7 +10,7 @@
         <!--Manual View Controller-->
         <scene sceneID="qov-ew-Rmc">
             <objects>
-                <viewController id="SqZ-cE-pLr" customClass="ManualViewController" customModule="점수판___" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="manual" id="SqZ-cE-pLr" customClass="ManualViewController" customModule="점수판___" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NXi-aw-pt9">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19r-8g-oJp" customClass="FunctionDescriptionView" customModule="점수판___" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="432" height="51.666666666666664"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="functionImage" value="smallcircle.fill.circle" catalog="system"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-ua-zKG">
                                                 <rect key="frame" x="0.0" y="51.666666666666664" width="432" height="0.0"/>
@@ -123,4 +126,7 @@
             <point key="canvasLocation" x="195.53571428571428" y="191.30434782608697"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smallcircle.fill.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
