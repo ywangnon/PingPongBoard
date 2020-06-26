@@ -57,6 +57,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="functionImage" value="smallcircle.fill.circle" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="funtionDescription" value="점수 올리기"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-ua-zKG">
@@ -69,6 +70,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDR-1h-3Hh" customClass="FunctionDescriptionView" customModule="점수판___" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="51.666666666666657" width="432" height="52"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="functionImage" value="arrow.down.circle" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="funtionDescription" value="점수 내리기"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-1i-1et">
                                                 <rect key="frame" x="0.0" y="103.66666666666666" width="432" height="0.0"/>
@@ -80,6 +85,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gL-aT-NSN" customClass="FunctionDescriptionView" customModule="점수판___" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="103.66666666666667" width="432" height="51.666666666666671"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="functionImage" value="largecircle.fill.circle" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="funtionDescription" value="점수 초기화"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wL3-1J-vVz">
                                                 <rect key="frame" x="0.0" y="155.33333333333331" width="432" height="128"/>
@@ -127,6 +136,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.down.circle" catalog="system" width="128" height="121"/>
+        <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
         <image name="smallcircle.fill.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

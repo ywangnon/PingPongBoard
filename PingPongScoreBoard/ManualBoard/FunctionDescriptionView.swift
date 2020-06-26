@@ -15,6 +15,7 @@ class FunctionDescriptionView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.initFromXIB()
     }
     
     required init?(coder: NSCoder) {
