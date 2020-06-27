@@ -9,6 +9,9 @@
 import UIKit
 
 class ManualViewController: UIViewController {
+    @IBAction func closeButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
